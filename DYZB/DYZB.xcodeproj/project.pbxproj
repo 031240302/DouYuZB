@@ -12,6 +12,10 @@
 		4B39D08F1F8DFC2C00D02B21 /* Focous.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B39D08D1F8DFC2C00D02B21 /* Focous.storyboard */; };
 		4B39D0921F8DFC5100D02B21 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B39D0901F8DFC5100D02B21 /* Profile.storyboard */; };
 		4B39D0941F8DFD3F00D02B21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D0931F8DFD3F00D02B21 /* MainViewController.swift */; };
+		4B39D0961F8E04DB00D02B21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D0951F8E04DB00D02B21 /* HomeViewController.swift */; };
+		4B39D0991F8E117600D02B21 /* UIBarButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D0981F8E117600D02B21 /* UIBarButton-Extension.swift */; };
+		4B39D09B1F8E1CD900D02B21 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D09A1F8E1CD900D02B21 /* PageTitleView.swift */; };
+		4B39D09D1F8E41DD00D02B21 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B39D09C1F8E41DD00D02B21 /* Common.swift */; };
 		4BA780E31F8DCE81006BEA00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA780E21F8DCE81006BEA00 /* AppDelegate.swift */; };
 		4BA780E81F8DCE81006BEA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA780E61F8DCE81006BEA00 /* Main.storyboard */; };
 		4BA780EA1F8DCE81006BEA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA780E91F8DCE81006BEA00 /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 		4B39D08E1F8DFC2C00D02B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Main/Base.lproj/Focous.storyboard; sourceTree = "<group>"; };
 		4B39D0911F8DFC5100D02B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Main/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		4B39D0931F8DFD3F00D02B21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4B39D0951F8E04DB00D02B21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4B39D0981F8E117600D02B21 /* UIBarButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButton-Extension.swift"; sourceTree = "<group>"; };
+		4B39D09A1F8E1CD900D02B21 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		4B39D09C1F8E41DD00D02B21 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		4BA780DF1F8DCE81006BEA00 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA780E21F8DCE81006BEA00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA780E71F8DCE81006BEA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,32 +54,18 @@
 		4B39D0831F8DF9B800D02B21 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				4B39D0841F8DF9B800D02B21 /* Controller */,
-				4B39D0851F8DF9B800D02B21 /* Model */,
-				4B39D0861F8DF9B800D02B21 /* View */,
+				4B39D0971F8E111800D02B21 /* Extension */,
+				4B39D09C1F8E41DD00D02B21 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		4B39D0841F8DF9B800D02B21 /* Controller */ = {
+		4B39D0971F8E111800D02B21 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4B39D0981F8E117600D02B21 /* UIBarButton-Extension.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4B39D0851F8DF9B800D02B21 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4B39D0861F8DF9B800D02B21 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		4BA780D61F8DCE81006BEA00 = {
@@ -113,7 +107,6 @@
 				4BA780F61F8DF436006BEA00 /* Model */,
 				4BA780F71F8DF436006BEA00 /* View */,
 				4BA780F51F8DF436006BEA00 /* Controller */,
-				4BA780E61F8DCE81006BEA00 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -121,6 +114,7 @@
 		4BA780F51F8DF436006BEA00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4BA780E61F8DCE81006BEA00 /* Main.storyboard */,
 				4B39D0931F8DFD3F00D02B21 /* MainViewController.swift */,
 			);
 			path = Controller;
@@ -136,6 +130,7 @@
 		4BA780F71F8DF436006BEA00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B39D09A1F8E1CD900D02B21 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,7 +141,6 @@
 				4BA7810A1F8DF693006BEA00 /* Model */,
 				4BA781091F8DF693006BEA00 /* View */,
 				4BA781081F8DF692006BEA00 /* Controller */,
-				4B39D0871F8DFBBB00D02B21 /* Home.storyboard */,
 			);
 			name = Home;
 			path = DYZB/Home;
@@ -230,6 +224,8 @@
 		4BA781081F8DF692006BEA00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4B39D0871F8DFBBB00D02B21 /* Home.storyboard */,
+				4B39D0951F8E04DB00D02B21 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,6 +343,10 @@
 			files = (
 				4BA780E31F8DCE81006BEA00 /* AppDelegate.swift in Sources */,
 				4B39D0941F8DFD3F00D02B21 /* MainViewController.swift in Sources */,
+				4B39D09B1F8E1CD900D02B21 /* PageTitleView.swift in Sources */,
+				4B39D0961F8E04DB00D02B21 /* HomeViewController.swift in Sources */,
+				4B39D09D1F8E41DD00D02B21 /* Common.swift in Sources */,
+				4B39D0991F8E117600D02B21 /* UIBarButton-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +518,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kk.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +534,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kk.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
