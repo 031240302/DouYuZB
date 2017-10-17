@@ -11,3 +11,4 @@ let kStatusBarH: CGFloat = 20
 let kNavigationBarH: CGFloat = 44
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
+let kTabbarY = UITabBar.appearance().bounds.origin.y
